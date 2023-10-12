@@ -51,7 +51,6 @@ def pass_surface_save(path, surface):
 #surface_selection = model_pass_selection.predict_surface(dataset_test)
 # pass_surface_save('./pass-surface/Intended_pass_selection.pkl', surface_selection)
 
-#pass success model
 print("pass success modeling")
 model_pass_success = pass_success.SoccerMapComponent(
     pass_success.PytorchSoccerMapModel()) 
@@ -78,7 +77,3 @@ pass_surface_save('./pass-surface/End_Intended_pass_Success.pkl', surface_pass_s
 # print("Failed pass value : ",surface_pass_value)
 
 
-
-#torch.save(model_pass_success,"./Pretrained_model/Pass-Success-SoccerMap")
-# torch.save(model_pass_successful_value,"./Pretrained_model/Pass-Successful-SoccerMap")
-# torch.save(model_pass_missed_value,"./Pretrained_model/Pass-Missed-SoccerMap")
